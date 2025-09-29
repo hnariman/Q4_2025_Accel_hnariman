@@ -1,6 +1,8 @@
 # Turbin3 Accelerated Builders Program: A Deep Dive into Solana's Frontier
 
-![Turbin3 Banner](https://www.turbin3.org/images/turbin3.svg) ## 📜 About this Repository
+## ![Turbin3 Banner](https://www.turbin3.org/images/turbin3.svg)
+
+## 📜 About this Repository
 
 This repository documents my journey through the **Turbin3 2025 Accelerated Builders Program**, an intensive, multi-week course focused on the most advanced and cutting-edge technologies on the Solana blockchain.
 
