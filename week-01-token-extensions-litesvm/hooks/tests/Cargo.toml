@@ -1,0 +1,13 @@
+[package]
+name = "tests"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[dependencies]
+anchor-client = "0.32.1"
+anchor-litesvm = "0.2.0"
+hooks = { version = "0.1.0", path = "../programs/hooks" }
+admin = { version = "0.1.0", path = "../programs/admin" }
+litesvm = "0.8.1"
+solana-sdk = "3.0.0"

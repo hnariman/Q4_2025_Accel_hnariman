@@ -20,7 +20,7 @@ pub struct InitializeWhitelist<'info> {
 impl<'info> InitializeWhitelist<'info> {
     pub fn initialize_whitelist(&mut self, bumps: InitializeWhitelistBumps) -> Result<()> {
         // Initialize the whitelist with an empty address vector
-        self.whitelist.set_inner(Whitelist { 
+        self.whitelist.set_inner(Whitelist {
             address: vec![],
             bump: bumps.whitelist,
         });
@@ -28,3 +28,19 @@ impl<'info> InitializeWhitelist<'info> {
         Ok(())
     }
 }
+
+
+// so basically we define 
+// admin : pubkey
+// whitelist: PDA with seed of 'whitelist' string
+// and send here system program - why not hardcode it?
+//
+//
+// then we generate those in tests or on client (web too) and pass to protocol
+//
+// and since in transfers etc we've had some kind of CPI and executables, this instruction seems
+// like something "empty", this is why it's strange from the first sight
+// but It's completely OK
+//
+// but possibly we don't need even to init this, since we will generate PDA based on each
+// users,pubkey

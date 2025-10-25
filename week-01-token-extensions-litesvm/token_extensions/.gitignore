@@ -1,2 +1,8 @@
 /node_modules/
 /target/
+## for installations
+.yarn/
+.anchor/
+
+## for anchor test
+test-ledger/ 

@@ -2,6 +2,7 @@ use anchor_lang::prelude::*;
 
 #[account]
 pub struct Whitelist {
-    pub address: Vec<Pubkey>,
+    pub amount: u64,
     pub bump: u8,
 }
+
